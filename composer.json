@@ -37,10 +37,7 @@
         "laravel": {
             "providers": [
                 "Webstarters\\Management\\ManagementServiceProvider"
-            ],
-            "aliases": {
-                "Management": "Webstarters\\Management\\ManagementFacade"
-            }
+            ]
         }
     }
 }
