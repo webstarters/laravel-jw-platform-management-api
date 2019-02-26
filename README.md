@@ -1,35 +1,27 @@
-# Laravel JW Platform Management
+# Laravel JW Platform Management API
 
 A simple wrapper for the JW Platform Management API.
 
 ## Installation
 
-You can install the package via composer:
+You can install the package via Composer:
 
 ```bash
-composer require webstarters/laravel-jw-platform-management
+composer require webstarters/laravel-jw-platform-management-api
 ```
 
 ## Usage
 
-``` php
-$skeleton = new Spatie\Skeleton();
-echo $skeleton->echoPhrase('Hello, Spatie!');
-```
+File uploading has not been tested and may not work. PRs are accepted to include this functionality.
 
-## Test
-
-``` bash
-composer test
+```php
+$management = new Webstarters\Management();
+echo $management->get('/videos/tracks/list');
 ```
 
 ## Changelog
 
 See [CHANGELOG](CHANGELOG.md) for details on what has changed.
-
-## Contribution
-
-See [CONTRIBUTING](CONTRIBUTING.md) for details on how to contribute.
 
 ## Security
 

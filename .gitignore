@@ -1,5 +1,9 @@
-vendor/
-node_modules/
+build
+composer.lock
+docs
+vendor
+coverage
+node_modules
 npm-debug.log
 
 # Laravel 4 specific
@@ -18,3 +22,4 @@ Homestead.json
 
 # Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
 .rocketeer/
+
