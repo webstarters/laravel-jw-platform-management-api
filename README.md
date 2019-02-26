@@ -27,10 +27,6 @@ composer test
 
 See [CHANGELOG](CHANGELOG.md) for details on what has changed.
 
-## Contribution
-
-See [CONTRIBUTING](CONTRIBUTING.md) for details on how to contribute.
-
 ## Security
 
 For any security related issues, send a mail to [pj@webstarters.dk](mailto:pj@webstarters.dk) instead of using the issue tracker.
