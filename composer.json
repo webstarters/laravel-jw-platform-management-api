@@ -1,0 +1,52 @@
+{
+    "name": "webstarters/laravel-jw-platform-management",
+    "description": "A simple wrapper for the JW Platform Management API",
+    "keywords": [
+        "webstarters",
+        "laravel-jw-platform-management"
+    ],
+    "homepage": "https://github.com/webstarters/laravel-jw-platform-management",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Peter Jørgensen",
+            "email": "pj@webstarters.dk",
+            "homepage": "https://webstarters.dk",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "larapack/dd": "^1.0",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webstarters\\Management\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Webstarters\\Management\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webstarters\\Management\\ManagementServiceProvider"
+            ],
+            "aliases": {
+                "Management": "Webstarters\\Management\\ManagementFacade"
+            }
+        }
+    }
+}
