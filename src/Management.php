@@ -2,6 +2,8 @@
 
 namespace Webstarters\Management;
 
+use Webstarters\Exceptions\ManagementException;
+
 class Management
 {
     private $protocol;
@@ -90,12 +92,22 @@ class Management
         $client = new GuzzleHttp\Client();
 
         $response = $client->request($method, $url, [
-            // TODO Data
+            $data,
             'headers' => [
                 'Accept'        => 'application/json',
                 'Content-Type'  => 'application/json',
             ],
         ]);
+
+        $body = $response->getBody();
+
+        $decodedResponse = json_decode($body);
+
+        if ($decodedResponse['status']) == 'error') {
+            throw ManagementException::error($decodedResponse);
+        }
+
+        return $decodedResponse;
     }
 
     public function get($url, $data = []) {
