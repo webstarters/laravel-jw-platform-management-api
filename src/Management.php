@@ -102,7 +102,7 @@ class Management
 
         $decodedResponse = json_decode($body);
 
-        if ($decodedResponse['status']) == 'error') {
+        if ($decodedResponse['status'] == 'error') {
             throw ManagementException::error($decodedResponse);
         }
 
