@@ -68,7 +68,7 @@ class Management
         $data['api_key'] = $this->key;
         $data['api_format'] = 'json';
 
-        $data['api_signature'] = $this->signature($data),
+        $data['api_signature'] = $this->signature($data);
 
         return http_build_query($data, '', '&');
     }
