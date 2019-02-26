@@ -39,5 +39,7 @@
                 "Webstarters\\Management\\ManagementServiceProvider"
             ]
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
