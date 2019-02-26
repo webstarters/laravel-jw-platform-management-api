@@ -63,11 +63,13 @@ class Management
 
     private function buildQueryParameters($data) {
 
-        $api['api_nonce'] = str_pad(mt_rand(0, 99999999), 8, STR_PAD_LEFT);
-        $api['api_timestamp'] = time();
-        $api['api_key'] = $this->key;
-        $api['api_format'] = 'json';
-        $api['api_signature'] = $this->signature($data);
+        $api = [
+            'api_nonce' => str_pad(mt_rand(0, 99999999), 8, STR_PAD_LEFT),
+            'api_timestamp' => time(),
+            'api_key' => $this->key,
+            'api_format' => 'json',
+            'api_signature' => $this->signature($data),
+        ];
 
         $data = array_merge($api, $data);
 
