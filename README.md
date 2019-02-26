@@ -4,7 +4,7 @@ A simple wrapper for the JW Platform Management API.
 
 ## Installation
 
-You can install the package via composer:
+You can install the package via Composer:
 
 ```bash
 composer require webstarters/laravel-jw-platform-management
@@ -12,9 +12,11 @@ composer require webstarters/laravel-jw-platform-management
 
 ## Usage
 
-``` php
-$skeleton = new Spatie\Skeleton();
-echo $skeleton->echoPhrase('Hello, Spatie!');
+File uploading has not been tested and may not work. PRs are accepted to include this functionality.
+
+```php
+$management = new Webstarters\Management();
+echo $management->get('/videos/tracks/list');
 ```
 
 ## Changelog
