@@ -99,7 +99,7 @@ class Management
 
         $body = $response->getBody();
 
-        $decodedResponse = json_decode($body);
+        $decodedResponse = json_decode($body, true);
 
         if ($decodedResponse['status'] == 'error') {
             throw ManagementException::error($decodedResponse);
