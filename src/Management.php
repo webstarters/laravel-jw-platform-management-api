@@ -71,7 +71,7 @@ class Management
 
         $data = array_merge($api, $data);
 
-        return http_build_query($data), '', '&');
+        return http_build_query($data, '', '&');
     }
 
     private function formatUrl($url, $data = []) {
@@ -80,19 +80,18 @@ class Management
             $this->protocol,
             $this->server,
             $this->version,
-            $this->url,
+            ltrim($this->url, '/'),
             $this->buildQueryParameters($data)
         );
     }
 
     public function call($url, $data = [], $method = 'GET') {
 
-        $url = $this->formatUrl($url, $data);
+        $formattedUrl = $this->formatUrl($url, $data);
 
-        $client = new GuzzleHttp\Client();
+        $client = new \GuzzleHttp\Client();
 
-        $response = $client->request($method, $url, [
-            $data,
+        $response = $client->request($method, $formattedUrl, [
             'headers' => [
                 'Accept'        => 'application/json',
                 'Content-Type'  => 'application/json',
