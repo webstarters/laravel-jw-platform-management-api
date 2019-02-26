@@ -1,4 +1,4 @@
-# Laravel JW Platform Management
+# Laravel JW Platform Management API
 
 A simple wrapper for the JW Platform Management API.
 
@@ -7,7 +7,7 @@ A simple wrapper for the JW Platform Management API.
 You can install the package via Composer:
 
 ```bash
-composer require webstarters/laravel-jw-platform-management
+composer require webstarters/laravel-jw-platform-management-api
 ```
 
 ## Usage
