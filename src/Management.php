@@ -54,7 +54,7 @@ class Management
                 $signatureBaseString .= '&';
             }
 
-            $signatureBaseString .= sprintf('%s=%s', $this->encode($key), $this->encode($value));
+            $signatureBaseString .= $this->encode($key) . "=" . $this->encode($value);
         }
 
         // Add shared secret to the Signature Base String and generate the signature
