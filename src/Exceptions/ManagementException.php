@@ -1,6 +1,6 @@
 <?php
 
-namespace Webstarters\Management\Exceptions;
+namespace Webstarters\Platform\Exceptions;
 
 use Exception;
 

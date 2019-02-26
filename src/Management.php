@@ -1,6 +1,6 @@
 <?php
 
-namespace Webstarters\Management;
+namespace Webstarters\Platform;
 
 use Webstarters\Exceptions\ManagementException;
 
