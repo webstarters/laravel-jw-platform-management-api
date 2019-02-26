@@ -7,8 +7,6 @@
         "jw-player",
         "jw-platform",
         "jw-platform-management",
-        "api",
-        "laravel-jw-platform-management-api"
     ],
     "homepage": "https://github.com/webstarters/laravel-jw-platform-management-api",
     "license": "MIT",
