@@ -78,7 +78,7 @@ class Management
 
     private function formatUrl($url, $data = []) {
         return sprintf(
-            '%s:%s/%s/%s?%s',
+            '%s://%s/%s/%s?%s',
             $this->protocol,
             $this->server,
             $this->version,
