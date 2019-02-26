@@ -17,12 +17,6 @@ $skeleton = new Spatie\Skeleton();
 echo $skeleton->echoPhrase('Hello, Spatie!');
 ```
 
-## Test
-
-``` bash
-composer test
-```
-
 ## Changelog
 
 See [CHANGELOG](CHANGELOG.md) for details on what has changed.
