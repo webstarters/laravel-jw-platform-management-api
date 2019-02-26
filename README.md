@@ -15,7 +15,7 @@ composer require webstarters/laravel-jw-platform-management-api
 File uploading has not been tested and may not work. PRs are accepted to include this functionality.
 
 ```php
-$management = new \Webstarters\Management\Management();
+$management = new \Webstarters\Platform\Management();
 echo $management->get('/videos/tracks/list');
 ```
 
