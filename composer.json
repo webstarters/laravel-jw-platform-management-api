@@ -1,5 +1,5 @@
 {
-    "name": "webstarters/laravel-jw-platform-management",
+    "name": "webstarters/laravel-jw-platform-management-api",
     "description": "A simple wrapper for the JW Platform Management API",
     "keywords": [
         "webstarters",
@@ -8,9 +8,9 @@
         "jw-platform",
         "jw-platform-management",
         "api",
-        "laravel-jw-platform-management"
+        "laravel-jw-platform-management-api"
     ],
-    "homepage": "https://github.com/webstarters/laravel-jw-platform-management",
+    "homepage": "https://github.com/webstarters/laravel-jw-platform-management-api",
     "license": "MIT",
     "authors": [
         {
