@@ -80,7 +80,7 @@ class Management
             $this->protocol,
             $this->server,
             $this->version,
-            ltrim($this->url, '/'),
+            ltrim($url, '/'),
             $this->buildQueryParameters($data)
         );
     }
