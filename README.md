@@ -1,6 +1,6 @@
 # Laravel JW Platform Management API
 
-A simple wrapper for the JW Platform Management API.
+A super-simple wrapper for the JW Platform Management API.
 
 ## Installation
 
